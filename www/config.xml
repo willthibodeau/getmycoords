@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
-<widget xmlns     = "http://www.w3.org/ns/widgets"
-        xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.weberish.getmycoords"
-        version   = "1.0.0">
+<widget xmlns           = "http://www.w3.org/ns/widgets"
+        xmlns:gap       = "http://phonegap.com/ns/1.0"
+        xmlns:android   = "http://schemas.android.com/apk/res/android"
+        id              = "com.wilfredrthibodeau.getmycoords"
+        version         = "1.0.0">
 
-    <name>Get My Coords</name>
+    <name>Geolocation Plugin</name>
 
     <description>
         Display coordinates of your location.
     </description>
 
-    <author href="http://weberish.com" email="info@weberish.com">
-        Weberish
+    <author href="http://wilfredrthibodeau.com" email="Will@wilfredrthibodeau.com">
+        Will Thibodeau
     </author>
 
-    <!--
+    <!-- This file is from Webrish
         If you do not want any permissions to be added to your app, add the
         following tag to your config.xml; you will still have the INTERNET
         permission on your app, which PhoneGap requires.
@@ -24,7 +25,7 @@
     <preference name="permissions"                value="none"/>
 
     <!-- Customize your app and platform with the preference element. -->
-    <preference name="phonegap-version"           value="3.4.0" />          <!-- all: current version of PhoneGap -->
+    <!-- <preference name="phonegap-version"           value="3.4.0" />          <!-- all: current version of PhoneGap --> -->
     <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
     <preference name="fullscreen"                 value="false" />           <!-- all: hides the status bar at the top of the screen -->
@@ -48,7 +49,7 @@
     <!-- Define app icon for each platform. This is a relative path to config.xml.
         For e.g. if you place an icon.png inside res folder, you should modify the
         src in the following setting to "res/icon.png" -->
-    <icon src="icon.png" />
+    <icon src="geo1.png" />
 
     <!-- Define app splash screen for each platform. -->
 

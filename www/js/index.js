@@ -38,41 +38,12 @@ function currentPosition(){
 	}	
 } // end currentPosition 
 
-   // start of geolocation content /
+  
         
 
 
 
-// set variable with coordinates
 
-var x = document.getElementById("demo");
-
-function getLocation() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition, showError);
-    } else { 
-        x.innerHTML = "Geolocation is not supported by this browser.";
-    }
-}
-
-function showPosition(position) {
-    lat = position.coords.latitude;
-    lon = position.coords.longitude;
-    latlon = new google.maps.LatLng(lat, lon)
-    mapholder = document.getElementById('mapholder')
-    mapholder.style.height = '250px';
-    mapholder.style.width = '250px';
-
-    var myOptions = {
-    center:latlon,zoom:14,
-    mapTypeId:google.maps.MapTypeId.ROADMAP,
-    mapTypeControl:false,
-    navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL}
-    }
-    var w = new google.maps.LatLng(-35.397, 150.644);
-    var map = new google.maps.Map(document.getElementById("mapholder"), myOptions);
-    var marker = new google.maps.Marker({position:latlon,map:map,title:"You are here!"});
-}
 
 
 
